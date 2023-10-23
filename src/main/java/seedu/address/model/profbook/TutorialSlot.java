@@ -1,5 +1,9 @@
 package seedu.address.model.profbook;
 
+import static seedu.address.commons.util.CollectionUtil.requireAllNonNull;
+
+import java.util.Map;
+
 import javafx.scene.layout.Region;
 import seedu.address.commons.util.ToStringBuilder;
 import seedu.address.model.id.Id;
@@ -7,10 +11,9 @@ import seedu.address.model.taskmanager.TaskList;
 import seedu.address.ui.TutorialSlotCard;
 import seedu.address.ui.UiPart;
 
-import java.util.Map;
-
-import static seedu.address.commons.util.CollectionUtil.requireAllNonNull;
-
+/**
+ * Encapsulates logic for a Tutorial slot within profbook
+ */
 public class TutorialSlot extends ChildrenAndTaskListManager<Group> {
 
     /**

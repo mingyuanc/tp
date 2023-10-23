@@ -4,11 +4,10 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Region;
-import seedu.address.model.profbook.Group;
 import seedu.address.model.profbook.TutorialSlot;
 
 /**
- * An UI component that displays information of a {@code Student}.
+ * A UI component that displays information of a {@code Student}.
  */
 public class TutorialSlotCard extends UiPart<Region> {
     public static final String DISPLAY_NAME = "<< %1$s >>";
