@@ -64,7 +64,12 @@
         "appendix-instructions-for-manual-testing": "Appendix: Instructions for manual testing",
         "launch-and-shutdown": "Launch and shutdown",
         "deleting-a-person": "Deleting a person",
-        "saving-data": "Saving data"
+        "saving-data": "Saving data",
+        "appendix-effort": "Appendix: Effort",
+        "project-overview": "Project Overview",
+        "difficulty-level-challenging": "Difficulty Level Challenging",
+        "effort-required": "Effort Required",
+        "effort-savings-through-reuse": "Effort Savings through Reuse"
       },
       "headingKeywords": {}
     },
@@ -128,6 +133,7 @@
         "create-deadline-task-deadline": "Create Deadline task : deadline",
         "mark-unmark-tasks-as-completed-mark": "Mark/Unmark tasks as completed: mark",
         "search-for-tasks-find": "Search for Tasks: find",
+        "display-all-tasks-cat": "Display all tasks: cat",
         "save-the-data-todo-update": "Save the data (//TODO update)",
         "edit-the-data-file-todo-update": "Edit the data file (//TODO update)",
         "archive-data-files-coming-in-v1-3": "Archive data files [coming in v1.3]",
