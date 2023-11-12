@@ -653,7 +653,7 @@ with(this){return _c('ol',[_c('li',[_c('p',[_v("User requests to mark a specific
 with(this){return _c('p',[_c('strong',[_v("Extensions")])])}
 },function anonymous(
 ) {
-with(this){return _c('ul',[_c('li',[_c('p',[_v("1a. User inputs command while not in tasklist display using "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("cat")])]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("1a1. ProfBook shows an error message.")]),_v(" "),_c('p',[_v("Use case resumes at step 1.")])])])]),_v(" "),_c('li',[_c('p',[_v("1a. The Index provided is invalid.")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("1a1. ProfBook shows an error message.")]),_v(" "),_c('p',[_v("Use case resumes at step 1.")])])])])])}
+with(this){return _c('ul',[_c('li',[_c('p',[_v("1a. User inputs command while not in tasklist display using "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("cat")])]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("1a1. ProfBook shows an error message.")]),_v(" "),_c('p',[_v("Use case resumes at step 1.")])])])]),_v(" "),_c('li',[_c('p',[_v("1b. The Index provided is invalid.")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("1b1. ProfBook shows an error message.")]),_v(" "),_c('p',[_v("Use case resumes at step 1.")])])])])])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("Use case: Unmark task")])])}
@@ -668,7 +668,7 @@ with(this){return _c('ol',[_c('li',[_c('p',[_v("User requests to unmark a specif
 with(this){return _c('p',[_c('strong',[_v("Extensions")])])}
 },function anonymous(
 ) {
-with(this){return _c('ul',[_c('li',[_c('p',[_v("1a. User inputs command while not in tasklist display using "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("cat")])]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("1a1. ProfBook shows an error message.")]),_v(" "),_c('p',[_v("Use case resumes at step 1.")])])])]),_v(" "),_c('li',[_c('p',[_v("1a. The Index provided is invalid.")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("1a1. ProfBook shows an error message.")]),_v(" "),_c('p',[_v("Use case resumes at step 1.")])])])])])}
+with(this){return _c('ul',[_c('li',[_c('p',[_v("1a. User inputs command while not in tasklist display using "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("cat")])]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("1a1. ProfBook shows an error message.")]),_v(" "),_c('p',[_v("Use case resumes at step 1.")])])])]),_v(" "),_c('li',[_c('p',[_v("1b. The Index provided is invalid.")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("1b1. ProfBook shows an error message.")]),_v(" "),_c('p',[_v("Use case resumes at step 1.")])])])])])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("Use case: Delete task")])])}
@@ -848,6 +848,6 @@ with(this){return _c('h3',{attrs:{"id":"effort-savings-through-reuse"}},[_c('str
 with(this){return _c('ul',[_c('li',[_c('p',[_c('strong',[_v("Path Component:")]),_v(" We introduced the "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("Path")]),_v(" component, which includes subclasses for managing both "),_c('strong',[_v("absolute")]),_v(" and *\n"),_c('em',[_v("relative")]),_v("* paths. This component played a crucial role in managing navigation and executing dynamic commands within\nour application.")])]),_v(" "),_c('li',[_c('p',[_c('strong',[_v("ChildrenManager Component:")]),_v(" The component was instrumental in representing the hierarchical structure in our\napplication. We successfully leveraged this component to perform operations related to child entities, optimizing the\nhandling of students within groups and groups within the ProfBook.")])]),_v(" "),_c('li',[_c('p',[_c('strong',[_v("TaskListManager Component:")]),_v(" This component streamlines task management and allocation by providing a consistent and\nunified interface for handling tasks throughout the application.")])])])}
 },function anonymous(
 ) {
-with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.1.0")]),_v(", generated on Sun, 12 Nov 2023, 19:49:58 GMT+8]")])])])}
+with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.1.0")]),_v(", generated on Sun, 12 Nov 2023, 22:07:35 GMT+8]")])])])}
 }];
   
