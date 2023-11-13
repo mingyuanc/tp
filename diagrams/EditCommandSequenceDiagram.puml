@@ -29,7 +29,7 @@ deactivate RootChildOperation
 ModelManagerStatic --> EditCommand :opr
 deactivate ModelManagerStatic
 
-EditCommand -> RootChildOperation : editChild(groupId, editedField)
+EditCommand -> RootChildOperation : editChild(groupId, editDescriptor)
 activate RootChildOperation
 
 RootChildOperation -> oldGroup : getName()

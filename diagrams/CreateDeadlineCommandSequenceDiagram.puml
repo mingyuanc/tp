@@ -8,41 +8,41 @@ end box
 
 box Model MODEL_COLOR_T1
 participant ":ModelManager" as ModelManagerStatic MODEL_COLOR
-participant "opr:TaskOperation" as TaskOperation MODEL_COLOR
+participant "opr:ChildOperation" as ChildOperation MODEL_COLOR
 participant ":Student" as Student MODEL_COLOR
 end box
 
 [->  CreateDeadlineCommand : execute()
 activate CreateDeadlineCommand
 
-CreateDeadlineCommand -> ModelManagerStatic : taskOperation(path)
+CreateDeadlineCommand -> ModelManagerStatic : groupChildOperation(path)
 activate ModelManagerStatic
 
-create TaskOperation
-ModelManagerStatic -> TaskOperation
-activate TaskOperation
+create ChildOperation
+ModelManagerStatic -> ChildOperation
+activate ChildOperation
 
-TaskOperation --> ModelManagerStatic : opr
-deactivate TaskOperation
+ChildOperation --> ModelManagerStatic : opr
+deactivate ChildOperation
 
 ModelManagerStatic --> CreateDeadlineCommand :opr
 deactivate ModelManagerStatic
 
-CreateDeadlineCommand -> TaskOperation : addAllTask(task)
-activate TaskOperation
+CreateDeadlineCommand -> ChildOperation : addAllTask(task)
+activate ChildOperation
 
 loop for each student in group
-    TaskOperation -> Student : addTask(task)
+    ChildOperation -> Student : addTask(task)
     activate Student
 
 
-    Student --> TaskOperation
+    Student --> ChildOperation
     deactivate Student
 end
 
-TaskOperation --> CreateDeadlineCommand
+ChildOperation --> CreateDeadlineCommand
 
-destroy TaskOperation
+destroy ChildOperation
 
 [<--CreateDeadlineCommand
 destroy CreateDeadlineCommand

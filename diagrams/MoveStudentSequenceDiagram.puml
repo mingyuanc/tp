@@ -43,6 +43,19 @@ deactivate ChildOperation2
 ModelManagerStatic --> command : destOpr
 deactivate ModelManagerStatic
 
+command -> ChildOperation2 : addChild(id, student)
+activate ChildOperation2
+
+ChildOperation2 -> DestGroup : addChild(id, student)
+activate DestGroup
+
+DestGroup --> ChildOperation2
+deactivate DestGroup
+
+ChildOperation2 --> command
+destroy ChildOperation2
+
+
 command -> ChildOperation : deleteChild(id)
 activate ChildOperation
 
@@ -55,17 +68,6 @@ deactivate SourceGroup
 ChildOperation --> command
 destroy ChildOperation
 
-command -> ChildOperation2 : addChild(id, student)
-activate ChildOperation2
-
-ChildOperation2 -> DestGroup : addChild(id, student)
-activate DestGroup
-
-DestGroup --> ChildOperation2
-deactivate DestGroup
-
-ChildOperation2 --> command
-destroy ChildOperation2
 
 [<--command
 deactivate command

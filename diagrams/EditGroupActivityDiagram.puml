@@ -26,6 +26,6 @@ else ([new id already used])
     stop
 endif
 :Remove old group;
-:Add new Group;
+:Add new group;
 stop
 @enduml

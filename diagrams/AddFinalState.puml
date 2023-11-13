@@ -1,35 +1,35 @@
 @startuml
 title Final state
 
-object Root
+object "<u>:Root</u>" as Root
 
-object group1 {
+object "<u>:Group</u>" as group1 {
     name = "group 1"
     id = grp-001
 }
 
-object group2 {
+object "<u>:Group</u>" as group2 {
     name = "group 2"
-    id = grp-001
+    id = grp-002
 }
 
-object student1 {
+object "<u>:Student</u>" as student1 {
     name = "John"
     id = 1234Y
-    email = "IloveDrawingDiagrams@gmail.com"
+    email = "ilovedrawingdiagrams@gmail.com"
     phone = "09881765"
     address = "NUS"
 }
 
-object student2 {
+object "<u>:Student</u>" as student2 {
     name = "Mary"
     id = 9876A
-    email = "IloveCoding@gmail.com"
+    email = "ilovecoding@gmail.com"
     phone = "12345678"
     address = "Malaysia"
 }
 
-object student3 {
+object "<u>:Student</u>" as student3 {
     name = "Bob"
     id = 2000Y
     email = "bobby@example.com"

@@ -7,13 +7,8 @@ participant ":LogicManager" as LogicManager LOGIC_COLOR
 participant ":ProfBookParser" as ProfBookParser LOGIC_COLOR
 participant ":DeleteTaskCommandParser" as DeleteTaskCommandParser LOGIC_COLOR
 participant "d:DeleteTaskCommand" as DeleteTaskCommand LOGIC_COLOR
-participant ":CommandResult" as CommandResult LOGIC_COLOR
 end box
 
-box Model MODEL_COLOR_T1
-participant ":ModelManager" as ModelManagerStatic MODEL_COLOR
-participant "opr:TaskOperation" as TaskOperation MODEL_COLOR
-end box
 
 [-> LogicManager : execute("rmt 1")
 activate LogicManager
@@ -40,6 +35,7 @@ deactivate DeleteTaskCommand
 
 DeleteTaskCommandParser --> ProfBookParser : d
 deactivate DeleteTaskCommandParser
+
 'Hidden arrow to position the destroy marker below the end of the activation bar.
 DeleteTaskCommandParser -[hidden]-> ProfBookParser
 destroy DeleteTaskCommandParser
@@ -47,45 +43,17 @@ destroy DeleteTaskCommandParser
 ProfBookParser --> LogicManager : d
 deactivate ProfBookParser
 
-LogicManager -> DeleteTaskCommand : execute(state)
+LogicManager -> DeleteTaskCommand : execute("state")
 activate DeleteTaskCommand
 
-DeleteTaskCommand -> ModelManagerStatic : taskOperation(new Path("~/grp-001"))
-activate ModelManagerStatic
-
-create TaskOperation
-ModelManagerStatic -> TaskOperation
-activate TaskOperation
-
-TaskOperation --> ModelManagerStatic : opr
-deactivate TaskOperation
-
-ModelManagerStatic --> DeleteTaskCommand :opr
-deactivate ModelManagerStatic
-
-DeleteTaskCommand -> TaskOperation : opr.deleteTask(1)
-activate TaskOperation
-
-TaskOperation --> DeleteTaskCommand
-
-destroy TaskOperation
-
-DeleteTaskCommand -> ModelManagerStatic : updateList()
-activate ModelManagerStatic
-
-ModelManagerStatic --> DeleteTaskCommand
-deactivate ModelManagerStatic
-
-create CommandResult
-DeleteTaskCommand -> CommandResult
-activate CommandResult
-
-CommandResult --> DeleteTaskCommand : result
-deactivate CommandResult
+ref over DeleteTaskCommand
+    Execution of DeleteTaskCommand
+end ref
 
 DeleteTaskCommand --> LogicManager : result
 deactivate DeleteTaskCommand
 
 [<--LogicManager
 deactivate LogicManager
+
 @enduml
