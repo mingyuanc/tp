@@ -197,11 +197,13 @@
       "title": "Ching Ming Yuan's Project Portfolio Page",
       "headings": {
         "project-profbook": "Project: ProfBook",
+        "code-contributed": "Code contributed:",
         "features-contribution": "Features Contribution",
         "classes-contribution": "Classes Contribution",
-        "code-contributed": "Code contributed:",
         "project-management": "Project Management:",
-        "documentations": "Documentations:"
+        "documentations": "Documentations:",
+        "user-guide-contributions": "User Guide Contributions",
+        "developer-guide-contributions": "Developer Guide Contributions"
       },
       "headingKeywords": {}
     },
